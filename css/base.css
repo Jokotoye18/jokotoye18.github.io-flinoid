@@ -1,0 +1,141 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background: #fff;
+    font-size: 2rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+a{
+    color: #007bff;
+}
+.container{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.border{
+    border: 1px solid red;
+}
+.section-flex{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    padding-top: 1em;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.brand-icon{
+    width: 20px;
+    height: 20px;
+}
+.brand{
+    opacity: .5;
+    padding-left: .2em;
+}
+.sign-in{
+    margin-bottom: .6em;
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: -.3em;
+}
+.account{
+    font-size: .8em;
+}
+.signin-form{
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.form-input{
+    width: 100%;
+    display: block;
+    margin: 1em 0;
+    padding: .6em 1em;
+    border-radius: 2em;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, .1);
+    font-size: .8em;
+}
+.submit-btn-container{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.submit-btn{
+    margin: .7em 0;
+    font-size: .7em;
+    border-radius: 2em;
+    padding: .6em 1.5em;
+    border: none;
+    background-color: royalblue;
+    color: #fff;
+}
+.logins strong{
+    text-align: left;
+}
+.login-google, .login-facebook{
+    width: 100%;
+    display: block;
+    margin: .7em 0;
+    font-size: .7em;
+    border-radius: 2em;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+}
+.login-facebook{
+    background-color: #507cff;
+}
+.login-google{
+    background-color: #ec4545;
+}
+.forget-password{
+    font-size: .8em;
+}
+
+@media screen and (min-width: 996px) {
+    body{
+        background-color: #aaaaaa;
+
+    }
+    .section-flex{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-flex > div {
+        flex-basis: 41%;
+    }
+    .brand-icon{
+        width: 80px;
+        height: 80px;
+    }
+    .brand{
+        font-size: 2em;
+        color: #fff;
+        opacity: 1;
+    }
+    .my-logins{
+        background-color: #fff;
+        padding: 1.5em;
+        border-radius: .3em;
+        margin: 3em 2em;
+        max-width: 400px;
+    }
+}
+
